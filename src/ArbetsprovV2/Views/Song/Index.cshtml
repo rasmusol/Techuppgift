@@ -1,0 +1,14 @@
+﻿@model ArbetsprovV2.Models.ViewModels.SongViewModel
+<div asp-validation-summary="ValidationSummary.All"></div>
+<form asp-controller="Song" asp-action="Index">
+    <label asp-for="ArtistName"></label>
+    <input asp-for="ArtistName" />
+    <span asp-validation-for="ArtistName"></span>
+    <br />
+    <label asp-for="Title"></label>
+    <input asp-for="Title" />
+    <span asp-validation-for="Title"></span>
+    <br />
+
+    <input type="submit" value="Search" />
+</form>

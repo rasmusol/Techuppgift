@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+<header>Header page</header>
+    <br />
+    <br />
+
+<h3> Go to page @Html.ActionLink("Song", "Index", "Song");</h3>
+    <h3> Go to page @Html.ActionLink("Genre", "Index", "Genre");</h3>
+    <div>
+        @RenderBody()
+    </div>
+@*@RenderSection("scripts")*@
+    <br />
+<br/>
+<br/>
+    <footer>Footer page</footer>
+</body>
+</html>

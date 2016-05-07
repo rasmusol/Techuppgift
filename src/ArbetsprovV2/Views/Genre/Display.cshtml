@@ -1,0 +1,7 @@
+﻿@model List<ArbetsprovV2.Models.Artist>
+
+@foreach (var item in Model)
+{
+    <h3>@item.Name</h3>
+    <p style="color:green">@item.Hotness</p>
+}

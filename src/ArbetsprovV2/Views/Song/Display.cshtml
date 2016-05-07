@@ -1,0 +1,25 @@
+﻿@using System.Collections.Generic
+@using System.Threading.Tasks
+@using Microsoft.AspNet.Mvc.Rendering
+@model List<ArbetsprovV2.Models.Song>
+
+@foreach (var item in Model)
+{
+    <h3>@item.ArtistName</h3>
+    <p> @item.Title</p>
+}
+
+@*<form asp-controller="Song" asp-action="Test">
+    <select id="mood">
+        <option value="Sad">Sad</option>
+        <option value="1">Angry</option>
+        <option value="2">Happy</option>
+        <option value="3">Chill</option>
+    </select>
+
+    <input type="submit" name="mood" value="Create" />
+</form>
+<script src="~/scripts/jquery.js"></script>
+<script>
+        $("#mood").on('change', function () { //sent this.value to action });
+</script>*@
